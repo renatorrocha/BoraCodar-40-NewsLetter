@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  @apply bg-black
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+button {
+  @apply bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.tagline {
+  @apply text-base leading-loose font-medium
+}
+
+.heading {
+  @apply text-[48px] font-bold
+}
+
+.paragraph-18 {
+  @apply text-base leading-relaxed
+}
+
+.paragraph-14 {
+  @apply text-sm leading-relaxed
 }
