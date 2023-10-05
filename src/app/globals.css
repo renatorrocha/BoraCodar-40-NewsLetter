@@ -6,16 +6,24 @@
   @apply bg-black
 }
 
-button {
-  @apply bg-gradient-to-r from-gradient-purple-start to-gradient-purple-end
-}
-
 .tagline {
-  @apply text-base leading-loose font-medium
+  @apply text-base leading-6 font-medium bg-clip-text bg-gradient-to-br from-0% from-gradient-purple-start to-100% to-gradient-purple-end text-transparent uppercase
 }
 
-.heading {
-  @apply text-[48px] font-bold
+.title {
+  @apply text-[48px] font-bold text-white
+}
+
+.subtitle {
+  @apply text-lg leading-7 text-gray-light
+}
+
+input {
+  @apply py-4 px-3 items-center rounded-md bg-gray-800 text-gray-200 w-64
+}
+
+button {
+  @apply bg-gradient-to-br from-gradient-purple-start to-gradient-purple-end flex text-center p-4 gap-2 rounded-md
 }
 
 .paragraph-18 {
