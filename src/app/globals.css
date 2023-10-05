@@ -23,13 +23,13 @@ input {
 }
 
 button {
-  @apply bg-gradient-to-br from-gradient-purple-start to-gradient-purple-end flex text-center p-4 gap-2 rounded-md
+  @apply bg-gradient-to-br from-gradient-purple-start to-gradient-purple-end flex text-center p-4 gap-2 rounded-md hover:animate-pulse
 }
 
-.paragraph-18 {
-  @apply text-base leading-relaxed
+.card-title {
+  @apply text-lg leading-7 font-bold text-white
 }
 
-.paragraph-14 {
-  @apply text-sm leading-relaxed
+.card-subtitle {
+  @apply text-sm leading-5 text-gray-200
 }

@@ -9,10 +9,12 @@ interface Props {
 
 export default function Card(props: Props) {
   return (
-    <section>
+    <section className='flex flex-col gap-4 w-72'>
       <Image src={props.icon} alt={props.alt} priority />
-      <p>{props.title}</p>
-      <p>{props.subtitle}</p>
+      <div className='flex flex-col gap-2'>
+        <p className="card-title ">{props.title}</p>
+        <p className="card-subtitle">{props.subtitle}</p>
+      </div>
     </section>
   )
 }
