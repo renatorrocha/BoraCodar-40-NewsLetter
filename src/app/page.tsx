@@ -28,7 +28,7 @@ export default function Home() {
         </form>
       </article>
 
-      <article className="flex gap-10 mx-16">
+      <article className="flex gap-10 mx-16 mb-12">
         <Card
           icon={rocket}
           title="As últimas inovações"
